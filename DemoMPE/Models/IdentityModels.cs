@@ -30,7 +30,7 @@ namespace DemoMPE.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("DemoMPE", throwIfV1Schema: false)
         {
         }
 

@@ -1,5 +1,8 @@
-﻿using System;
+﻿using DemoMPE.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Web;
 using System.Web.Optimization;
@@ -16,6 +19,12 @@ namespace DemoMPE
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            // Initialize the gas database
+            Database.SetInitializer(new GasDatabaseInitializer());
+            GasContext db = new GasContext();
+            db.Logs.Count();
+
         }
     }
 }

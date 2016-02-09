@@ -9,6 +9,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
+using DemoMPE.Logic;
 
 namespace DemoMPE
 {
@@ -23,6 +24,9 @@ namespace DemoMPE
             // Initialize the gas database
             Database.SetInitializer(new GasDatabaseInitializer());
 
+            // Create the custom role and user.
+            RoleActions roleActions = new RoleActions();
+            roleActions.AddUserAndRole();
         }
     }
 }

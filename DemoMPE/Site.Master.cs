@@ -7,6 +7,8 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
+using System.Linq;
+using DemoMPE.Models;
 
 namespace DemoMPE
 {
@@ -69,7 +71,32 @@ namespace DemoMPE
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (HttpContext.Current.User.IsInRole("canEdit"))
+            {
+                adminLink.Visible = true;
+            }
+        }
 
+
+        public IQueryable<Gas> GetGases()
+        {
+            var _db = new DemoMPE.Models.GasContext();
+            IQueryable<Gas> query = _db.Gases;
+            return query;
+        }
+
+        public IQueryable<GasPrice> GetGasPrices()
+        {
+            var _db = new DemoMPE.Models.GasContext();
+            IQueryable<GasPrice> query = _db.GasPrices;
+            return query;
+        }
+
+        public IQueryable<Log> GetLogs()
+        {
+            var _db = new DemoMPE.Models.GasContext();
+            IQueryable<Log> query = _db.Logs;
+            return query;
         }
 
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)

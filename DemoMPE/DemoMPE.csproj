@@ -176,6 +176,8 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Admin\Dostopi.aspx" />
+    <Content Include="Cena.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -192,7 +194,11 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Admin\Web.config" />
     <None Include="Scripts\jquery-2.2.0.intellisense.js" />
+    <Content Include="Images\cpg_ozadje_1.jpg" />
+    <Content Include="Koriscenost.aspx" />
+    <Content Include="Poraba.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.2.0.js" />
@@ -352,6 +358,13 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Dostopi.aspx.cs">
+      <DependentUpon>Dostopi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dostopi.aspx.designer.cs">
+      <DependentUpon>Dostopi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -363,6 +376,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Cena.aspx.cs">
+      <DependentUpon>Cena.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cena.aspx.designer.cs">
+      <DependentUpon>Cena.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -380,6 +400,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Koriscenost.aspx.cs">
+      <DependentUpon>Koriscenost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Koriscenost.aspx.designer.cs">
+      <DependentUpon>Koriscenost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Migrations\201602051635521_InitialCreate.cs" />
     <Compile Include="Migrations\201602051635521_InitialCreate.Designer.cs">
       <DependentUpon>201602051635521_InitialCreate.cs</DependentUpon>
@@ -395,6 +423,13 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\GasPrice.cs" />
     <Compile Include="Models\Log.cs" />
+    <Compile Include="Poraba.aspx.cs">
+      <DependentUpon>Poraba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Poraba.aspx.designer.cs">
+      <DependentUpon>Poraba.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

@@ -10,7 +10,7 @@ namespace DemoMPE.Models
 
         }
         public DbSet<Gas> Gases { get; set; }
-        public DbSet<GasPrice> Prices { get; set; }
+        public DbSet<GasPrice> GasPrices { get; set; }
         public DbSet<Log> Logs { get; set; }
     }
 }

@@ -10,8 +10,6 @@ namespace DemoMPE.Models
 
         public System.DateTime date { get; set; }
 
-        //public string UserId { get; set; }
-        //[ForeignKey("UserId")]
-        //public ApplicationUser ApplicationUser { get; set; }
+        public string User { get; set; }
     }
 }

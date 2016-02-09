@@ -13,9 +13,9 @@ namespace DemoMPE.Models
     {
         protected override void Seed(GasContext context)
         {
-            GetPrices().ForEach(p => context.Prices.Add(p));
-            GetGases().ForEach(g => context.Gases.Add(g));
-            GetLogs().ForEach(l => context.Logs.Add(l));
+            //GetPrices().ForEach(p => context.Prices.Add(p));
+            //GetGases().ForEach(g => context.Gases.Add(g));
+            //GetLogs().ForEach(l => context.Logs.Add(l));
             base.Seed(context);
         }
 
@@ -90,7 +90,7 @@ namespace DemoMPE.Models
 
                     date = new System.DateTime(2016, i > 31 ? 2 : 1, (i % 31) + 1),
 
-                    //UserId = "1"
+                    User = "1"
                 });
             }
             return logs;

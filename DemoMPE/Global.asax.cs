@@ -22,8 +22,6 @@ namespace DemoMPE
 
             // Initialize the gas database
             Database.SetInitializer(new GasDatabaseInitializer());
-            GasContext db = new GasContext();
-            db.Logs.Count();
 
         }
     }

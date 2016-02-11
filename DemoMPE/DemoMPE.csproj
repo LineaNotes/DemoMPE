@@ -59,6 +59,10 @@
       <HintPath>..\packages\DotNet.Highstock.1.1.2\lib\net45\DotNet.Highstock.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="JetEntityFrameworkProvider, Version=1.1.1.0, Culture=neutral, PublicKeyToken=756cf6beb8fe7b41, processorArchitecture=MSIL">
+      <HintPath>..\packages\JetEntityFrameworkProvider.1.1.2\lib\JetEntityFrameworkProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -407,6 +411,8 @@
     <Compile Include="Koriscenost.aspx.designer.cs">
       <DependentUpon>Koriscenost.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logic\Conversion.cs" />
+    <Compile Include="Logic\Helpers.cs" />
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Migrations\201602051635521_InitialCreate.cs" />
     <Compile Include="Migrations\201602051635521_InitialCreate.Designer.cs">
@@ -417,9 +423,12 @@
       <DependentUpon>201602090936440_ModifiedLogClass.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AsfaltnaBazaContext.cs" />
+    <Compile Include="Models\AsfaltnaBazaDatabaseInitializer.cs" />
     <Compile Include="Models\Gas.cs" />
     <Compile Include="Models\GasContext.cs" />
     <Compile Include="Models\GasDatabaseInitializer.cs" />
+    <Compile Include="Models\Gorivo.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\GasPrice.cs" />
     <Compile Include="Models\Log.cs" />
